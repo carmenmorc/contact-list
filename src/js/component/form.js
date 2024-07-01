@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
+import "../../styles/form.css";
 
 export const Form = () => {
 
@@ -30,7 +31,7 @@ export const Form = () => {
                 <input type="text" className="form-control" placeholder="Phone" value={formData.phone} name="phone" onChange={handleChange}/>
                 <input type="text" className="form-control" placeholder="Address" value={formData.address} name="address" onChange={handleChange}/>
                 <input type="submit" className="btn btn-primary" value="Add Contact" />
-                <Link to="/" className="btn btn-secondary">Ver Lista</Link>
+                <Link to="/" className="btn btn-secondary">See List</Link>
             </form>
         </>
     );

@@ -8,11 +8,11 @@ export const Home = () => {
     const { store, actions } = useContext(Context);
 
     return (
-        <div className="text-center mt-3">
+        <div className="mt-3 home">
             {store.contacts.map((el, i) => (
                 <Contact key={i} name={el.name} email={el.email} address={el.address} phone={el.phone} />
             ))}
-            <Link to="/add" className="btn btn-primary">Añadir Contacto</Link>
+            <Link to="/add" className="btn btn-primary button">Add Contact</Link>
         </div>
     );
 };

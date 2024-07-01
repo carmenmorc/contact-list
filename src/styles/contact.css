@@ -1,0 +1,16 @@
+.card {
+    width: 50%;
+    align-items: start;
+    border-radius: 15px;
+    padding: 15px;
+    margin: auto;
+}
+
+.card img {
+    width: 100%;
+    max-height: 275px;
+}
+
+.card-text {
+    margin-bottom: 5px; /* Ajusta el margen inferior según tus necesidades */
+}
